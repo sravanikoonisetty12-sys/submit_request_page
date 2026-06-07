@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Request</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            Nexus.Client
+        </div>
+
+        <div class="profile">
+
+            <div class="avatar">
+                A
+            </div>
+
+            <div>
+                <h3>Alex</h3>
+                <p>Acme Corporation</p>
+            </div>
+
+        </div>
+
+        <ul class="menu">
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gauge"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="#">
+                    <i class="fa-solid fa-pen"></i>
+                    Submit Request
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-upload"></i>
+                    File Upload
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file-invoice"></i>
+                    Invoices
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-credit-card"></i>
+                    Payments
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="logout">
+            <a href="#">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Sign Out
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+        <h1>Submit a Request</h1>
+
+        <p class="subtitle">
+            Send a message, feedback, or project brief to our team.
+        </p>
+
+        <div class="card">
+
+            <h3>
+                <i class="fa-solid fa-circle-info"></i>
+                Request Details
+            </h3>
+
+            <form>
+
+                <div class="row">
+
+                    <div class="input-group">
+                        <label>Request Title</label>
+                        <input type="text" placeholder="e.g. Website redesign feedback">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Category</label>
+                        <select>
+                            <option>Select Category</option>
+                            <option>Website</option>
+                            <option>Mobile App</option>
+                            <option>UI Design</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+                        <label>Priority</label>
+
+                        <select>
+                            <option>Normal</option>
+                            <option>Low</option>
+                            <option>High</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Preferred Due Date</label>
+
+                        <input type="date">
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Message / Description</label>
+
+                    <textarea rows="6"
+                    placeholder="Describe your request in detail..."></textarea>
+
+                </div>
+
+                <div class="buttons">
+
+                    <button class="submit-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Submit Request
+                    </button>
+
+                    <button type="reset" class="clear-btn">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Clear
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- Upload Card -->
+
+        <div class="card">
+
+            <h3>
+                <i class="fa-solid fa-paperclip"></i>
+                Attach Files (Optional)
+            </h3>
+
+            <div class="upload-box">
+
+                <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+
+                <h4>Drag & Drop Files Here</h4>
+
+                <p>or click to browse</p>
+
+                <input type="file">
+
+            </div>
+
+        </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
